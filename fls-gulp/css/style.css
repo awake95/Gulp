@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Montserrat-Black";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Black.woff") format("woff"), url("../fonts/Montserrat-Black.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-BlackItalic";
+  font-display: swap;
+  src: url("../fonts/Montserrat-BlackItalic.woff") format("woff"), url("../fonts/Montserrat-BlackItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-size: 27px;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  background: #f7f7f7;
+}
+
+.circle {
+  display: block;
+  width: 300px;
+  height: 300px;
+  background: #fcac00;
+  border-radius: 52% 45% 62% 15% / 85% 43% 44% 42%;
+  transition: .5s ease-in-out;
+  transform: scale(0.6);
+}
+
+.circle:hover {
+  border-radius: 8% 20% 10% 31% / 85% 49% 39% 42%;
+  transition: .5s;
+  width: 600px;
+  height: 600px;
+  transform: scale(1.2) rotate(360deg);
+  background: red;
+}
+@supports (-webkit-appearance:none){
+
+}
